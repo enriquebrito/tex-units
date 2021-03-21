@@ -1,8 +1,10 @@
-
 \usepackage[utf8]{inputenc}% Input encoding (DE: http://tobiw.de/tex-faq#kodierung)
 \usepackage[T1]{fontenc}% Font encoding (DE: http://tobiw.de/tex-faq#kodierung)
 
-\usepackage{babel}% Language package (DE: http://tobiw.de/tex-faq#babel)
+\iflanguage{spanish}{
+   \usepackage[spanish]{babel}
+}{\usepackage{babel}}
+% Language package (DE: http://tobiw.de/tex-faq#babel)
 
 \usepackage[sfdefault]{FiraSans}% Load font
 \KOMAoptions{fontsize = 8.5pt}% base font size
@@ -54,6 +56,9 @@
 \defcaptionname{english}{\definitionname}{Definition}
 \defcaptionname{english}{\notename}{Note}
 \defcaptionname{english}{\conversionname}{Conversion}
+\defcaptionname{spanish}{\definitionname}{\footnotesize{Definición}}
+\defcaptionname{spanish}{\notename}{\footnotesize{Nota}}
+\defcaptionname{spanish}{\conversionname}{\scriptsize{Conversión}}
 \AtBeginDocument{
    \providecommand{\definitionname}{Definition}
    \providecommand{\notename}{Note}
