@@ -1,4 +1,4 @@
-% !TeX spellcheck = en_GB
+% !TeX spellcheck = es_ES
 
 \providecommand{\TITLE}{Unidades de longitud en  \TeX}
 
@@ -19,8 +19,8 @@
       {sp}
    \TestUnit{Punto}{El punto se define como 1/\num{72.27} de pulgada.}{pt}
    \TestUnit
-      {Punto grande (DTP o punto PostScript)}
-      {El punto grande se define como 1/\num{72} de pulgada.}
+      {Punto PostScript}
+      {El punto PostScript se define como 1/\num{72} de pulgada.}
       [Word, InDesign y otras aplicaciones DTP usan esta definición para puntos.]
       {bp}
    \TestUnit{Punto Didot}{Una unidad antigua usada por impresores europeos}{dd}
@@ -42,13 +42,13 @@
 
 \providecommand{\RELATIVEUNITSCONTENT}{%
    \TestUnit*
-      {em}
-      {Tradicionalmente, un em se define como el ancho de la M mayúscula o igual al tamaño de fuente, pero en la actualidad el valor se define en el fichero de fuente.
+      {em (Cuadratín)}
+      {Tradicionalmente, un em (Cuadratín) se define como el ancho de la M mayúscula o igual al tamaño de fuente, pero en la actualidad el valor se define en el fichero de fuente.
       }
       [Esta unidad debe usarse para todas las distancias horizontales que deben cambiar en relación al tamaño de fuente; el sangrado de párrafo, por ejemplo.]
       {em}
    \TestUnit*
-      {ex}
+      {ex (Altura de x)}
       {Tradicionalmente, un ex se define como el alto de la x minúscula, pero en la actualidad el valor se define en el fichero de fuente.}
       [Esta unidad debe usarse para todas las distancias verticales que deben cambiar en relación al tamaño de fuente.]
       {ex}
